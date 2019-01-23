@@ -4,7 +4,7 @@
   "description": "Basic TestCafe API example",
   "main": "test.js",
   "scripts": {
-    "test": "testcafe all test.js"
+    "test": "testcafe chrome:headless test.js -r xunit:/tmp/test-results/res.xml"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DevExpress/testcafe#readme",
   "devDependencies": {
-    "testcafe": "*"
+    "testcafe": "*",
+    "testcafe-reporter-xunit": "*"
   }
 }
